@@ -37,7 +37,7 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 syntax on
-colorscheme gruvbox
+silent colorscheme gruvbox
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
