@@ -11,9 +11,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'itchyny/lightline.vim'
+"Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'https://github.com/ErichDonGubler/vim-sublime-monokai.git'
 "Plugin 'sickill/vim-monokai'
 " The following are examples of different formats supported.
@@ -37,7 +39,7 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 syntax on
-silent colorscheme gruvbox
+colorscheme gruvbox
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -55,3 +57,8 @@ set background=dark
 set laststatus=2
 "Highlight search
 set hlsearch
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+"
+" " Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
