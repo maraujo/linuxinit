@@ -366,4 +366,7 @@ hardstatus string '%{WB}%H %{W}| %{Y}%l %{W}| %?%{w}%-w%?%{+b g}[%{W}%{r}%n%{W} 
 
 # This line makes Detach and Re-attach without losing the regions/windows layout
 layout save default
-
+layout save default
+altscreen on
+defbce on
+set term=screen-256color
