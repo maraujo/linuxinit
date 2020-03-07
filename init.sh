@@ -4,7 +4,6 @@ sleep 1
 #Download TERMINAL Colors
 wget https://raw.githubusercontent.com/maraujo/LS_COLORS/master/LS_COLORS -O $HOME/.dircolors
 echo 'eval $(dircolors -b $HOME/.dircolors)' >> $HOME/.bashrc
-echo 'TERM=screen-256color'  >> $HOME/.bashrc
 . $HOME/.bashrc
 
 #Download Download Vundle
