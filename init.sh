@@ -6,6 +6,11 @@ wget https://raw.githubusercontent.com/maraujo/LS_COLORS/master/LS_COLORS -O $HO
 echo 'eval $(dircolors -b $HOME/.dircolors)' >> $HOME/.bashrc
 . $HOME/.bashrc
 
+#Start screen
+echo 'if [ -z "$STY" ]; then' >> $HOME/.bashrc
+echo 'exec screen -dR' >> $HOME/.bashrc
+echo 'fi' >> $HOME/.bashrc
+
 #Download Download Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
