@@ -13,7 +13,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 wget https://raw.githubusercontent.com/maraujo/linuxinit/master/.vimrc -O ~/.vimrc
 
 #Download my screenrc
-wget https://github.com/maraujo/linuxinit/blob/master/.screenrc -O ~/.screenrc
+wget https://raw.githubusercontent.com/maraujo/linuxinit/master/.screenrc -O ~/.screenrc
 
 # Install plugins from my vimrc
 vim +PluginInstall +qall!
