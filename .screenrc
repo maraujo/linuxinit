@@ -370,3 +370,4 @@ layout save default
 altscreen on
 defbce on
 set term=screen-256color
+termcapinfo xterm* ti@:te@
